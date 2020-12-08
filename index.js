@@ -102,10 +102,7 @@ client.on('message', message => {
   if(command == prefix + 'jiaboni'){
     var number = Math.floor(Math.random() * 2)
     var attachment = new Attachment('baby_yoda_nije.jpeg');
-    if(number == 0){
-      attachment = new Attachment('baby_yoda_nije.jpeg');
-    }
-    else{
+    if(number != 0){
       attachment = new Attachment('baby-yoda-ji.jpg');
     }
 
